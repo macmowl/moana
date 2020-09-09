@@ -7,7 +7,7 @@ ul {
 
 a,
 button {
-  color: inherit;
+  color: #2982BD;
 }
 
 a {
@@ -146,28 +146,49 @@ nav ul li {
 .profileScore {
     background-color: #F5F6FA;
     border-radius: 10px;
-    height: 84px;
+    /*height: 84px;*/
     margin-top: 35px;
+    padding: 10px;
+}
+
+.dives {
+    float: right;
 }
 
 .medical {
     margin-top: 50px;
 }
 
-.medical .container {
+.medical li {
     overflow: auto;
+    margin-bottom: 20px;
 }
 
 .medical .icon {
     float: left;
 }
 
-.medical .icon img {
+.medical img {
+    float: left;
     display: block;
+    margin-right: 20px;
 }
 
 .medical .info {
-    float: left;
+    line-height: 5px;
+    overflow: hidden;
+    height: 70px;
+    word-wrap: normal;
+}
+
+.medical .info p {
+    color: #A9A9A9;
+    font-size: 14px;
+}
+
+.medical .info a {
+    font-size: 12px;
+    text-decoration: underline;
 }
 
 .profile ul {
