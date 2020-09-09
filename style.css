@@ -38,11 +38,31 @@ svg {
 }
 
 body {
-  font: 16px/1.5 "Lato", sans-serif;
+  font: 16px/1.2 "Lato", sans-serif;
   display: grid;
   grid-template-columns: 15% 65% 20%;
   top: 0;
 }
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #343434;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #343434;
+}
+
+.caption {
+    font-size: 14px;
+    color: #888888;
+    text-align: center;
+}
+
+/* Content */
 
 .logo {
     font-size: 1.6em;
@@ -54,12 +74,6 @@ nav {
     background-color: white;
     display: flex;
     flex-direction: column;
-    min-height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: auto;
     padding-top: 20px;
     color: #343434;
 }
@@ -68,10 +82,11 @@ nav .admin-menu {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    margin-top: 35px;
+    justify-content: flex-start;
 }
-nav .admin-menu li {
-    margin-top: 35px;
+
+nav ul li {
+    height: 50px;
 }
 
 .content {
@@ -104,10 +119,57 @@ nav .admin-menu li {
     right: 40px;
 }
 
+
+/* -----------  Profile Part -------------- */
+
+.profile .profIcon {
+    float: right;
+}
+
+.profile .profIcon img {
+    margin-left: 10px;
+}
+
 .avatar {
     width: 110px;
     height:110px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 64px;
+}
+
+.avatarName {
+    text-align: center;
+    line-height: 20px;
+}
+
+.profileScore {
+    background-color: #F5F6FA;
+    border-radius: 10px;
+    height: 84px;
+    margin-top: 35px;
+}
+
+.medical {
+    margin-top: 50px;
+}
+
+.medical .container {
+    overflow: auto;
+}
+
+.medical .icon {
+    float: left;
+}
+
+.medical .icon img {
+    display: block;
+}
+
+.medical .info {
+    float: left;
+}
+
+.profile ul {
+    padding-inline-start: 0px;
 }
